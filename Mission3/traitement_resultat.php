@@ -1,7 +1,7 @@
 
 <?php
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'root', '');
+    $pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'siteuser', '');
 
     // Récupération des données du formulaire
     $competition_id = $_POST['competition_id'];

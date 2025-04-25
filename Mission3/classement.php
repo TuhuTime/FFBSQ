@@ -1,7 +1,7 @@
 <?php
 include 'menu.php';
 // Connexion à la base de données
-$pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'siteuser', '');
 
 // Inclure le fichier CSS proprement
 echo '<link rel="stylesheet" type="text/css" href="style.css">';

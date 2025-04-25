@@ -1,5 +1,5 @@
 <?php
-$pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'siteuser', '');
 
 $id = $_POST['id_competition'];
 $nom = $_POST['nom_competition'];

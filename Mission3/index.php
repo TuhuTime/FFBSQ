@@ -6,7 +6,7 @@ include 'menu.php';
     <h2 class="text-center">Compétitions à venir</h2>
 
     <?php
-    $pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'root', '');
+    $pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'siteuser', '');
 
     $sql = $pdo->query("
         SELECT c.id_competition, c.nom_competition, c.date_competition, c.lieu, cat.nom_categorie, t.nom_type, c.nb_equipes

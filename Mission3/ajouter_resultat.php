@@ -6,7 +6,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
 }
 
 include 'menu.php';
-$pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'siteuser', '');
 
 // Récupération des compétitions et équipes
 $competitions = $pdo->query("SELECT id_competition, nom_competition, nb_equipe_reel FROM competition")->fetchAll();

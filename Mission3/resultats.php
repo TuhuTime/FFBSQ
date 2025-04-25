@@ -1,6 +1,6 @@
 <?php
 include 'menu.php';
-$pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'siteuser', '');
 
 $competitionId = $_POST['competition_id'] ?? null;
 ?>
