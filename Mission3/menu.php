@@ -38,6 +38,10 @@ if (session_status() === PHP_SESSION_NONE) {
                 <a class="nav-link" href="gestion_competitions.php">Compétitions</a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="resultats.php">Résultats d'une compétitions</a>
+            </li>
+
             <!-- Classements -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="classementsDropdown" role="button" data-toggle="dropdown">

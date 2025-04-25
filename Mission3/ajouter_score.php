@@ -26,24 +26,6 @@ $equipes = $pdo->query("SELECT id_equipe, nom_equipe FROM equipe")->fetchAll();
             </select>
         </div>
 
-        <div class="mb-3">
-            <label class="form-label">Équipe</label>
-            <select name="equipe_id" class="form-select" required>
-                <?php foreach ($equipes as $equipe) { ?>
-                    <option value="<?= $equipe['id_equipe']; ?>"><?= $equipe['nom_equipe']; ?></option>
-                <?php } ?>
-            </select>
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label">Position</label>
-            <select name="position" class="form-select" required>
-                <option value="1">1ère place</option>
-                <option value="2">2ème place</option>
-                <option value="3">3ème place</option>
-            </select>
-        </div>
-
 
         <div class="form-group">
             <label for="nb_equipe_reel">Nombre réel de participants</label>
